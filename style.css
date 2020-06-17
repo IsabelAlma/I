@@ -1,0 +1,331 @@
+body {
+	font-family: sans-serif;
+	background: #FEFDFB;
+	color: #1A1C2C;
+}
+
+h1, h2, h3, h4 {
+	font-family: sans-serif;
+}
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #373E40; /* Onyx */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+/* The sidepanel links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  top: -25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  position: fixed;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1; /*keeps icon at the front*/
+  background-color: #555;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  transition: top 0.3s ease-in-out; /* Transition effect when sliding down (and up) */
+}
+
+.openbtn :hover {
+  background-color: #444;
+}
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -90px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 30px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Increase font size */
+  font-family: sans-serif;
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+
+#about {
+  top: 40px;
+  background-color: #4CAF50;
+}
+
+#projects {
+  top: 140px;
+  background-color: #2196F3; /* Blue */
+}
+
+#contactme {
+  top: 240px;
+  background-color: #f44336; /* Red */
+}
+
+#resume {
+  top: 340px;
+  background-color: #555 /* Light Black */
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media only screen and (max-device-width: 480px) {
+      .sidenav { width: auto;}
+      .sidebar a {font-size: 18px;}
+}   
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+
+/*background box of intro*/
+.introback {
+  background:#f2f2f2;
+  height: 100%;
+  max-width: 1366px;
+  border-radius: 75px;
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+  display: block;
+   margin: auto;
+   top: 0; bottom: 0;
+   padding: 30px
+}
+.intro {
+	text-align: center;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	border-radius: .5em;
+}
+
+.i-am, .i-like {
+	text-align: center;
+	text-decoration: none
+}
+
+.about-list {
+	list-style: none;
+	padding: 0;
+}
+
+
+.profile-picture {
+	border: 3px solid black; /*boarder around picture*/
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.profile-picture:hover {
+	box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
+}
+
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+/*
+change for skill grid
+@media (max-width: 650px) {
+	.projects-grid {
+		grid-template-columns: 100%;
+	}
+
+	.links-and-contact {
+		grid-template-columns: 100%;
+	}
+}*/
+
+
+footer{
+	position: absolute;
+}
+ 
+.footer-distributed{
+	background-color: #555;
+	box-sizing: border-box;
+	text-align: justify;
+	font: bold 16px sans-serif;
+	padding: 25px 20px 25px 300px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 30%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+  	text-align: center;
+}
+ 
+ 
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+ 
+/* Footer about description */
+.footer-distributed .footer-des{
+	color:  #ffffff;
+	margin: 10px 0 12px;
+}
+ 
+
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+ .footer-distributed .footer-center h3{
+	 text-align: center;
+}
+
+.footer-distributed .footer-center i{
+	color: #ffffff;
+	font-size: 28px;
+	text-align: center;
+	justify-content: center;
+  	line-height: 30px;
+  	text-align: center;
+}
+
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+
+.footer-distributed i.fa-envelope{
+ 	background-color:  #33383b;
+	color: #ffffff;
+	width: 38px;
+	border-radius: 50%; /*Changes circle for icon*/
+	text-align: center;
+	line-height: 38px;
+}
+.footer-distributed .footer-right p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+.footer-distributed .footer-right p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:5px;
+}
+
+.footer-distributed .footer-getintouch span{
+	display: block;
+	color:  #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  text-align:center;
+}
+
+.footer-distributed .footer-getintouch{
+	line-height: 20px;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+ 	padding-bottom:15px;
+}
+  
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px; 
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-distributed{
+		padding: 25px 25px 25px 25px;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ 
+}
