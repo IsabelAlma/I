@@ -11,15 +11,17 @@
 <!--main navbar-->
 <nav id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<a href="#" id="about">About</a>
+	<a href="#introtop" id="about">About</a>
 	<a href="#" id="projects">Projects</a>
 	<a href="https://www.dropbox.com/s/retkmzrrsk9dlqh/Isabel%20Almaguer%27s%20Resume%202020.docx?dl=0" id="resume">Resume</a>
-	<a href="#" id="contactme">Contact</a>
+	<a href="#fter" id="contactme">Contact</a>
 </nav>
 <button class="openbtn" onclick="openNav()">&#9776;</button>
+
 <body>
 	<div class="container">
-		<div class="introback">
+	<!--intro section-->
+		<div id="introtop" class="introback">
 			<div class="intro">
 				<img class="profile-picture" id="propic" src="https://media-exp1.licdn.com/dms/image/C4E03AQFrGanHO-uI3Q/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=4YkK1RrYVijIBZHsa6jCeacT3bvHwZjRmH5-OgWiC90">
 				<h1 style="font-size:300%;">Isabel Almaguer</h1>
@@ -51,16 +53,120 @@
 			<hr/>
 		</div>
 
+
+<!--skill section-->
 		<div>
-			<p>SKILLS HERE</p>
-			<i class="fa fa-html5" aria-hidden="true"></i>
+				<!--programming-->
+			<h3 class="skill-heading">Languages</h3>
+			<div class="skill-grid">
+				<div class="skill-image-wrapper">
+					<h4><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></h4>
+					<img class="skill-image" src="images/html.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a></h4>
+					<img class="skill-image" src="images/css.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a></h4>
+					<img class="skill-image" src="images/javascript.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://www.python.org/">Python</a></h4>
+					<img class="skill-image" src="images/python.png"/>
+				</div>
+
+        		<div class="skill-image-wrapper">
+					<h4><a href="https://en.wikipedia.org/wiki/SQL">SQL</a></h4>
+					<img class="skill-image" src="images/sql.png"/>
+				</div>
+			</div>
+
+				<!--dataviz-->
+			<h3 class="skill-heading">Data Visualization</h3>
+			<div class="skill-grid">
+				<div class="skill-image-wrapper">
+					<h4><a href="https://www.tableau.com/">Tableau</a></h4>
+					<img class="skill-image" src="images/tableau.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://www.microsoft.com/en-us/microsoft-365/excel">Excel</a></h4>
+					<img class="skill-image" src="images/excel.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://powerbi.microsoft.com/en-us/">PowerBi</a></h4>
+					<img class="skill-image" src="images/powerbi.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://www.qlik.com/us/">Qlik</a></h4>
+					<img class="skill-image" src="images/qlik.png"/>
+				</div>
+			</div>
+      
+		<!--Design-->
+			<h3 class="skill-heading">Design</h3>
+			<div class="skill-grid">
+				<div class="skill-image-wrapper">
+					<h4><a href="https://www.sketch.com/">Sketch</a></h4>
+					<img class="skill-image" src="images/sketch.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://www.invisionapp.com/">Invision</a></h4>
+					<img class="skill-image" src="images/Invision.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://miro.com/">Miro</a></h4>
+					<img class="skill-image" src="images/miro.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://www.adobe.com/products/photoshop.html">Photoshop</a></h4>
+					<img class="skill-image" src="images/photoshop.png"/>
+				</div>
+				<div class="skill-image-wrapper">
+					<h4><a href=https://www.adobe.com/products/illustrator.html>Illustrator</a></h4>
+					<img class="skill-image" src="images/Illustrator.png"/>
+				</div>
+			</div>
+
+		<!--Project Management-->
+			<h3 class="skill-heading">Project Management</h3>
+			<div class="skill-grid">
+				<div class="skill-image-wrapper">
+					<h4><a href="https://trello.com/en-US">Trello</a></h4>
+					<img class="skill-image" src="images/Trello.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://asana.com/">Asana</a></h4>
+					<img class="skill-image" src="images/Asana.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://www.pivotaltracker.com/">Pivotal Tracker</a></h4>
+					<img class="skill-image" src="images/Pivotal.png"/>
+				</div>
+        
+				<div class="skill-image-wrapper">
+					<h4><a href="https://github.com/">GitHub</a></h4>
+					<img class="skill-image" src="images/GitHuB.png"/>
+				</div>
+			</div>
 
 		</div>
 
-	</div>
+</div><!--closing div to main container-->
 
-
-		<footer class="footer-distributed">
+<!--footer-->
+		<footer id ="fter" class="footer-distributed">
 			<div class="footer-left">
 				<h3 class="cookie">About <span>Isabel</span></h3>
  
@@ -82,7 +188,7 @@
       
 				<div  class="footer-right">
         			<p class="footer-getintouch">
-					<span>Get in Touch</span> Feel free to send Isabel an email or connect with her on social media!</p>
+					<span>Get in Touch</span> Feel free to send an email or connect with me on social media!</p>
         
 			  	<div>
 					<i class="fa fa-envelope"></i>
