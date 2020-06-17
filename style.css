@@ -191,6 +191,9 @@ footer{
 	padding: 25px 20px 25px 300px;
 	margin-top: 80px;
 }
+.cookie{
+	font-family:'Cookie',cursive;
+}
  
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
