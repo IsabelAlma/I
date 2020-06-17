@@ -7,9 +7,11 @@ body {
 h1, h2, h3, h4 {
 	font-family: sans-serif;
 }
+
+/*navbar secion*/
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 100px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -23,6 +25,7 @@ h1, h2, h3, h4 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
+
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -66,6 +69,7 @@ h1, h2, h3, h4 {
   text-decoration: none; /* Remove underline */
   font-size: 16px; /* Increase font size */
   font-family: sans-serif;
+  text-align: center;
   color: white; /* White text color */
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
 
@@ -98,9 +102,14 @@ h1, h2, h3, h4 {
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media only screen and (max-device-width: 480px) {
       .sidenav { width: auto;}
-      .sidebar a {font-size: 18px;}
-}   
+      #mySidenav a {
+      	width: 230px;
+      	text-align: right;
+      	font-size: 18px;}
+ }   
 
+
+/*container*/
 .container {
 	max-width: 840px;
 	margin: 0 auto;
@@ -166,19 +175,66 @@ hr {
 	}
 }
 
-/*
-change for skill grid
+/*skill secion*/
+.skill-heading {
+	text-align: center;	
+	padding-top: 50px;
+}
+
+.skill-grid {
+	display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-auto-rows: 100px;
+  padding: 10px;
+}
+
+.skill-image {
+  padding: 5px;
+  text-align: center;
+	border-radius: 50px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+	max-width: 100px;
+  	height: 100px;
+}
+
+.skill-image:hover {
+	filter: brightness(.75);
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+
+.skill-image-wrapper {
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.skill-image-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.skill-image-wrapper > h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+.skill-image-wrapper a{color:#e0ac1c;
+	text-decoration: none;}
+
+/*skill grid*/
 @media (max-width: 650px) {
-	.projects-grid {
+	.skill-grid {
 		grid-template-columns: 100%;
 	}
+}
 
-	.links-and-contact {
-		grid-template-columns: 100%;
-	}
-}*/
-
-
+/*footer secion*/
 footer{
 	position: absolute;
 }
@@ -310,9 +366,6 @@ footer{
 }
  
 /* Here is the code for Responsive Footer */
-
- 
- 
 @media (max-width: 880px) {
  
 	.footer-distributed .footer-left,
