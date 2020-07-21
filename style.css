@@ -8,6 +8,10 @@ h1, h2, h3, h4 {
 	font-family: sans-serif;
 }
 
+h1{
+	text-align: center;
+}
+
 /*navbar secion*/
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
